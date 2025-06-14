@@ -53,8 +53,8 @@ Validació creuada:
 | Fitxer / Carpeta                | Descripció                                                                                                          |
 | ------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
 | **notebooks/**                  | Proves inicials, exploracions i prototips dels models.                                                              |
-| **crear\_dataset.py**           | Genera els diferents datasets de base a partir de dades brutes.                                                                 |
-| **dataset\_topy.py**            | Variant que llança la seqüència completa (semblant a `predictor.py`) amb ajustaments específics sobre el dataset.   |
+| **crear\_dataset.py**           | Genera els diferents datasets de base a partir de dades brutes.                                                     |
+| **dataset\_topy.py**            | Variant que llança la seqüència completa (semblant a `predictor.py`) seprarant per test   |
 | **datasets\_separats.py**       | Funcions utilitzades per tractar els models amb datsets separats                                    |
 | **enns.py**                     | Implementació d’**ENNS** per reequilibrar classes.                                       |
 | **enns2.py**                    | Mateixa funcionalitat que `enns.py` però amb modificacions menors i millores.                                       |
@@ -62,14 +62,13 @@ Validació creuada:
 | **func\_sel.py**                | Funcions de **selecció de variables** (LASSO, RFE…) i descart de variables irrellevants definides en un full Excel. |
 | **funcions\_net.py**            | Utilitats genèriques utilitzades arreu del projecte (logging, mètriques, helpers de xarxa, etc.).                   |
 | **lime\_test.py**               | Proves unitàries sobre l’aplicació de LIME.                                                                         |
-| **main.py**                     | Punt d’entrada modular; permet executar parts independents del pipeline.                                            |
 | **model\_explicatiu.py**        | Model que retorna a una carpteta, els coeficients de cada variable                  |
 | **predictor.py**                | Script principal: executa la etodologia bàsica        |
 | **predictor\_RFE.py**           | Variant amb **Recursive Feature Elimination**.                                                                      |
 | **predictor\_TGAN.py**          | Variant que genera dades sintètiques amb **TGAN**.                                                            |
-| **predictor\_bootstrap.py**     | Variant que aplica **bootstrap sampling** a l’entrenament.                                                          |
+| **predictor\_bootstrap.py**     | Variant que aplica **bootstrap** a l’entrenament.                                                          |
 | **predictor\_bootstrapTGAN.py** | Combina *bootstrap* + *TGAN*.                                                                                       |
-| **predictor\_enns.py**          | Variant que utilitza dataset reequilibrat amb **ENN**.                                                              |
+| **predictor\_enns.py**          | Variant que utilitza dataset reequilibrat amb **ENNS**.                                                              |
 | **preprocessing.py**            | Conjunt de funcions generals de preprocessament (neteja, imputació, *scaling*…).                                    |
 | **sel\_variables.py**           | Implementa diversos mètodes de selecció de variables (LASSO, RFE, enns).                       |
 
